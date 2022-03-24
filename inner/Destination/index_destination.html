@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Space Tourism Destination</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="logo" src="../../design/assets/shared/logo.svg" alt="logo">
+
+        <button class="hamburger icon" href="javascript:void(0);" onclick="myFunction()">
+            <img src="../../design/assets/shared/icon-hamburger.svg" alt="">
+            </button>
+
+        <nav id="myLinks" class="nav">
+            <ul class="nav__inner">
+                <li>
+                    <a class="nav__item home" href="../../index.html"><span>00</span> Home</a>
+                </li>
+                <li>
+                    <a class="nav__item destination" href="index_destination.html"><span>01</span> Destination</a>
+                </li>
+                <li>
+                    <a class="nav__item crew" href="../Crew/index_crew.html"><span>02</span> Crew</a>
+                </li>
+                <li>
+                    <a class="nav__item technology" href="../Technology/index_technology.html"><span>03</span> Technology</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <section class="page__object">
+        <h5><span>01</span> Pick your destination</h5>
+    </section>
+
+    <section class="slider">
+
+        <div class="slider__sections">
+            <button class="display-first btn" onclick="currentDiv(1)">Moon</button>
+            <button class="display-second btn" onclick="currentDiv(2)">Mars</button>
+            <button class="display-third btn" onclick="currentDiv(3)">Europa</button>
+            <button class="display-fourth btn" onclick="currentDiv(4)">Titan</button>
+        </div>
+
+        <div class="slider__item mySlides">
+
+            <img class="slide__img" src="images/image-moon.webp" alt="moon">
+
+            <div class="slide__text">
+                <h2>Moon</h2>
+                <p>See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+                <div class="stats">
+                    <div class="stats__item">
+                        <span>AVG. DISTANCE</span>
+                        <h5>384,400 km</h5>
+                    </div>
+                    <div class="stats__item">
+                        <span>Est. travel time</span>
+                        <h5>3 days</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider__item mySlides">
+
+            <img class="slide__img" src="images/image-mars.webp" alt="mars">
+
+            <div class="slide__text">
+                <h2>Mars</h2>
+                <p>Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!</p>
+
+                <div class="stats">
+                    <div class="stats__item">
+                        <span>AVG. DISTANCE</span>
+                        <h5>225 MIL. km</h5>
+                    </div>
+                    <div class="stats__item">
+                        <span>Est. travel time</span>
+                        <h5>9 months</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider__item mySlides">
+
+            <img class="slide__img" src="images/image-europa.webp" alt="europa">
+
+            <div class="slide__text">
+                <h2>Europa</h2>
+                <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+
+                <div class="stats">
+                    <div class="stats__item">
+                        <span>AVG. DISTANCE</span>
+                        <h5>628 MIL. km</h5>
+                    </div>
+                    <div class="stats__item">
+                        <span>Est. travel time</span>
+                        <h5>3 years</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider__item mySlides">
+
+            <img class="slide__img" src="images/image-titan.webp" alt="titan">
+
+            <div class="slide__text">
+                <h2>Titan</h2>
+                <p>The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+
+                <div class="stats">
+                    <div class="stats__item">
+                        <span>AVG. DISTANCE</span>
+                        <h5>1.6 BIL. km</h5>
+                    </div>
+                    <div class="stats__item">
+                        <span>Est. travel time</span>
+                        <h5>7 years</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="../../script_hamburger.js"></script>
+
+</body>
+
+</html>
